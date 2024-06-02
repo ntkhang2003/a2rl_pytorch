@@ -3,6 +3,8 @@ import os
 import numpy as np
 from envs_zoo import vfn_network as vfn_net
 import skimage.transform as transform
+tf.compat.v1.disable_eager_execution()
+
 
 class Scorer(object):
     def __init__(self, args):
